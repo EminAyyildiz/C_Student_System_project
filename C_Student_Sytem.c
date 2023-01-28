@@ -8,7 +8,6 @@ void add_student(void);
 void add_student(void);
 void display_student(void);
 void delete_student(void);
-void calculate_average(void);
 
 struct student {
     char name[50];
@@ -39,7 +38,7 @@ void add_student() {
 
 void delete_student() {
     if (student_count == 0) {
-        printf("Listede öğrenci yok.\n");
+        printf("There are no students on the list. Please Add students to the list.\n");
     }
     else{
         int school_number;
